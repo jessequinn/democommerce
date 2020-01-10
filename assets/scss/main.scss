@@ -1,0 +1,50 @@
+@import "~bulma/sass/utilities/_all";
+
+/* Custom colours:
+   (These are what we use on our website,
+   https://overscorestudios.ml,
+   so feel free to experiment with your own
+   colours/variables - see https://bulma.io/documentation/customize/
+*/
+
+$primary: hsl(242, 100%, 76%);
+//$primary-invert: findColorInvert($primary);
+
+//$info: hsl(337, 55%, 58%);
+//$info-invert: findColorInvert($info);
+//
+//$light: hsl(275, 20%, 83%);
+//$light-invert: findColorInvert($light);
+//
+//$dark: hsl(0, 0%, 15%);
+//$dark-invert: findColorInvert($dark);
+//
+//$link: hsl(242, 100%, 76%);
+//$link-invert: findColorInvert($link);
+//
+//$link-hover: hsl(229, 19%, 66%);
+//$link-focus: hsl(229, 19%, 66%);
+//
+//$strong-color: hsl(229, 19%, 66%);
+
+//$colors: (
+  //  "white": ($white, $black),
+  //  "black": ($black, $white),
+  //  "link": ($link, $link-invert),
+  //  "light": ($light, $light-invert),
+  //  "dark": ($dark, $dark-invert),
+  //"primary": ($primary, $primary-invert),
+  //  "info": ($info, $info-invert),
+  //  "success": ($success, $success-invert),
+  //  "warning": ($warning, $warning-invert),
+  //  "danger": ($danger, $danger-invert)
+//);
+
+
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors);
+$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades);
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
+
+
+// The rest of Bulma
+@import '~bulma';

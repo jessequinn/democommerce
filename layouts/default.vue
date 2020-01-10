@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0">
+  <div class="container is-fluid">
     <AppHeader/>
     <nuxt/>
     <AppFooter/>

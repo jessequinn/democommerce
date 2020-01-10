@@ -21,7 +21,9 @@ export default {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '~/assets/scss/main.scss',
+  ],
   /*
   ** Plugins to load before mounting the App
   */
@@ -35,17 +37,18 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/vaso2/nuxt-fontawesome#readme
-    'nuxt-fontawesome' // Imports FontAwesome 5 SVG icons
+    'nuxt-fontawesome', // Imports FontAwesome 5 SVG icons
+    '@nuxtjs/style-resources'
   ],
   fontawesome: {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons', // Solid icons
-        icons: ['faSearch', 'faShoppingCart', 'faHeart']
+        icons: ['faSearch', 'faShoppingCart', 'faHeart', 'faTheaterMasks']
       },
       {
         set: '@fortawesome/free-brands-svg-icons', // Brand icons

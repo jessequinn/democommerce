@@ -1,53 +1,73 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand href="#">Simple Ecommerce</b-navbar-brand>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <Fas i="theater-masks"/>
+      </a>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <a role="button" class="navbar-burger burger" aria-label="menu"
+         aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-    <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item class="m-auto" href="#">Home</b-nav-item>
-        <b-nav-item href="#">Categories</b-nav-item>
-        <b-nav-item href="#">Product</b-nav-item>
-        <b-nav-item href="#">Cart</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
-      </b-navbar-nav>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
 
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form class="my-2 my-lg-0">
-          <b-input-group size="sm">
-            <b-form-input placeholder="Search..."></b-form-input>
-            <b-input-group-prepend>
-              <b-button>
-                <Fas i="search"/>
-              </b-button>
-            </b-input-group-prepend>
-          </b-input-group>
+        <a class="navbar-item">
+          Categories
+        </a>
 
-          <b-button class="ml-3" href="cart.html" variant="success" size="sm">
-            <Fas i="shopping-cart"/>
-            <span class="badge badge-light">3</span>
-          </b-button>
-        </b-nav-form>
+        <a class="navbar-item">
+          Product
+        </a>
 
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
+        <a class="navbar-item">
+          Cart
+        </a>
 
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template v-slot:button-content>
-            <em>User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
