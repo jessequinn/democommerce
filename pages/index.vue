@@ -4,6 +4,31 @@
 
     <section class="section">
       <div class="container has-text-centered">
+        <h2 class="title">PiperNet Setup</h2>
+        <div class="columns is-multiline is-centered" data-config-id="how_02">
+          <div class="column is-8 is-4-widescreen">
+            <div class="block"><img src="https://via.placeholder.com/432x243" alt=""></div>
+            <h4 class="title"><small class="number">1</small> Move Data</h4>
+            <p>Using our Piper Assistant application, you can move your data to be stored our decentralized network with simple drag &amp; drop.</p>
+          </div>
+          <div class="column is-8 is-4-widescreen">
+            <div class="block"><img src="https://via.placeholder.com/432x243" alt=""></div>
+            <h4 class="title"><small class="number">2</small> Integrate Software</h4>
+            <p>We want to make sure that you can keep using the software that you use to manage your  business.</p>
+          </div>
+          <div class="column is-8 is-4-widescreen">
+            <div class="block"><img src="https://via.placeholder.com/432x243" alt=""></div>
+            <h4 class="title"><small class="number">3</small> Ongoing Support</h4>
+            <p>As with all innovative technologies, sometimes unpredictable things will happen, and you can always count on our support to solve issues for&nbsp;you.</p>
+          </div>
+        </div>
+        <div class="buttons is-centered"><a class="button is-primary" href="">Learn more</a></div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container has-text-centered">
         <h2 class="title">Our plans</h2>
         <div class="columns">
           <div class="column">
