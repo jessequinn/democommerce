@@ -38,7 +38,21 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // Doc: https://github.com/vaso2/nuxt-fontawesome#readme
+    'nuxt-fontawesome' // Imports FontAwesome 5 SVG icons
   ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons', // Solid icons
+        icons: ['faSearch', 'faShoppingCart']
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons', // Brand icons
+        icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube', 'faGithub']
+      }
+    ]
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
