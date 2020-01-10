@@ -45,7 +45,7 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons', // Solid icons
-        icons: ['faSearch', 'faShoppingCart']
+        icons: ['faSearch', 'faShoppingCart', 'faHeart']
       },
       {
         set: '@fortawesome/free-brands-svg-icons', // Brand icons
